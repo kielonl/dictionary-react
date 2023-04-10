@@ -17,7 +17,7 @@ export default {
         red: "#FF5252",
       },
       fontFamily: {
-        sansSerif: ["Inter", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
         serif: ["Lora", "serif"],
         mono: ["Inconsolata", "monospace"],
       },

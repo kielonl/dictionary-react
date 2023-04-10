@@ -1,9 +1,11 @@
+import Icon from "./components/Icon";
+import TextField from "./components/TextField";
 import ThemeContextProvider from "./contexts/ThemeContextProvider";
 
 const App = () => {
   return (
     <ThemeContextProvider>
-      <div></div>
+      <TextField icon={<Icon.Search />} placeholder="Search for any word..." />
     </ThemeContextProvider>
   );
 };
