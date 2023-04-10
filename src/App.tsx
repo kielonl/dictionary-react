@@ -1,12 +1,10 @@
-import Typography from "./components/Typography";
+import ThemeContextProvider from "./contexts/ThemeContextProvider";
 
 const App = () => {
   return (
-    <div>
-      <Typography variant="headingL" font="sans">
-        Aliquam
-      </Typography>
-    </div>
+    <ThemeContextProvider>
+      <div></div>
+    </ThemeContextProvider>
   );
 };
 
