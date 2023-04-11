@@ -7,7 +7,7 @@ interface DropdownMenuProps {
   children: React.ReactNode;
 }
 
-export const DropdownMenu: React.FC<DropdownMenuProps> = ({
+const DropdownMenu: React.FC<DropdownMenuProps> = ({
   className,
   trigger,
   children,
@@ -28,3 +28,5 @@ export const DropdownMenu: React.FC<DropdownMenuProps> = ({
     </Popover.Root>
   );
 };
+
+export default DropdownMenu;
