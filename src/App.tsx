@@ -1,5 +1,7 @@
+import ThemeContextProvider from "./contexts/ThemeContextProvider";
+
 const App = () => {
-  return <div></div>;
+  return <ThemeContextProvider>s</ThemeContextProvider>;
 };
 
 export default App;
