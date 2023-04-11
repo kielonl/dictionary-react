@@ -9,14 +9,14 @@ interface TypographyProps
     React.HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
   > {
-  variant: Variant;
+  variant?: Variant;
   font?: Font;
   className?: string;
   children: React.ReactNode;
 }
 
 const Typography: React.FC<TypographyProps> = ({
-  variant,
+  variant = "bodyM",
   font = "sans",
   className,
   children,

@@ -22,6 +22,10 @@ export default {
         mono: ["Inconsolata", "monospace"],
       },
     },
+    boxShadow: {
+      dropdownLight: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+      dropdownDark: "#A445ED 0px 5px 15px",
+    },
   },
   plugins: [],
 };
