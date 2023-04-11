@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { load, save } from "../services/storageManager";
+import { StorageKey, Theme } from "../constants";
 import { ThemeContext } from "./ThemeContext";
 
 interface ThemeContextProviderProps {
@@ -9,15 +10,17 @@ interface ThemeContextProviderProps {
 const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({
   children,
 }) => {
-  const storageTheme = load("theme") as string;
-  const [theme, setTheme] = useState(storageTheme || "light");
+  const storageTheme = load(StorageKey.Theme);
+  const [theme, setTheme] = useState<Theme>(storageTheme || Theme.Light);
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((prevTheme) =>
+      prevTheme === Theme.Light ? Theme.Dark : Theme.Light
+    );
   };
 
   useEffect(() => {
     document.documentElement.className = theme;
-    save("theme", theme);
+    save(StorageKey.Theme, theme);
   }, [theme]);
 
   return (
