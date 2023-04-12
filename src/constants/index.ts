@@ -13,3 +13,7 @@ export enum Font {
   Serif = "serif",
   Mono = "mono",
 }
+
+export enum HTTP_Method {
+  GET,
+}
