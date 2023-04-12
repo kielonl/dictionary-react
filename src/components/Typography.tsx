@@ -36,7 +36,7 @@ const Typography: React.FC<TypographyProps> = ({
     mono: "font-mono ",
   };
 
-  const fontClass = fonts[font];
+  const fontClass = fonts[font.toLowerCase() as Font];
 
   const variantClasses: Record<Variant, string> = {
     headingL: fontClass + "text-[64px] font-bold leading-[77px]",
@@ -49,7 +49,6 @@ const Typography: React.FC<TypographyProps> = ({
   const classes = twMerge(variantClasses[variant], className);
 
   const Component = variants[variant];
-
   return (
     <Component className={classes} {...props}>
       {children}
