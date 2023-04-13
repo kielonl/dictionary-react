@@ -6,7 +6,9 @@ const App = () => {
   return (
     <ThemeContextProvider>
       <FontContextProvider>
-        <MainPage />
+        <div className="bg-white dark:bg-black dark:text-white">
+          <MainPage />
+        </div>
       </FontContextProvider>
     </ThemeContextProvider>
   );

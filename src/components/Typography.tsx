@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 
-type Variant = "headingL" | "headingM" | "headingS" | "bodyM" | "bodyS";
-type Component = "h1" | "h2" | "h3" | "p";
+type Variant = "headingL" | "headingM" | "headingS" | "bodyM" | "bodyS" | "div";
+type Component = "h1" | "h2" | "h3" | "p" | "div";
 type Font = "sans" | "serif" | "mono";
 
 interface TypographyProps
@@ -16,7 +16,7 @@ interface TypographyProps
 }
 
 const Typography: React.FC<TypographyProps> = ({
-  variant = "bodyM",
+  variant = "div",
   font = "sans",
   className,
   children,
@@ -28,6 +28,7 @@ const Typography: React.FC<TypographyProps> = ({
     headingS: "h3",
     bodyM: "p",
     bodyS: "p",
+    div: "div",
   };
 
   const fonts: Record<Font, string> = {
@@ -44,6 +45,7 @@ const Typography: React.FC<TypographyProps> = ({
     headingS: fontClass + "text-[20px] leading-[24px]",
     bodyM: fontClass + "text-[18px] leading-[24px]",
     bodyS: fontClass + "text-[14px] leading-[17px]",
+    div: fontClass + "text-[18px] leading-[24px]",
   };
 
   const classes = twMerge(variantClasses[variant], className);

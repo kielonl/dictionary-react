@@ -4,7 +4,7 @@ import ThemeToggler from "../ThemeToggler";
 
 const UpperBar = () => {
   return (
-    <div className="flex flex-row justify-center items-center mt-5">
+    <div className="flex flex-row justify-center items-center pt-5">
       <Icon.Logo />
       <div className="flex-1"></div>
       <FontToggler className="border-r-[1px] pr-4" />
