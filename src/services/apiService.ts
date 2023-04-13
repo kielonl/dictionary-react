@@ -1,8 +1,8 @@
 import { callApi } from "../api/callApi";
 import { HTTP_Method } from "../constants";
-import { Dictionary } from "../types";
+import { Word } from "../types";
 
-export const getWord = async (word: string): Promise<Dictionary> => {
+export const getWord = async (word: string) => {
   const response = await callApi(HTTP_Method.GET, `${word}`);
   return response;
 };

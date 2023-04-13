@@ -6,7 +6,7 @@ const App = () => {
   return (
     <ThemeContextProvider>
       <FontContextProvider>
-        <div className="bg-white dark:bg-black dark:text-white">
+        <div className="bg-white dark:bg-black dark:text-white min-h-screen">
           <MainPage />
         </div>
       </FontContextProvider>
