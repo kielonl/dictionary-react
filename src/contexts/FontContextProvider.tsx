@@ -19,7 +19,7 @@ const FontContextProvider: React.FC<FontContextProviderProps> = ({
 
   return (
     <FontContext.Provider value={{ font, setFont }}>
-      {children}
+      <div className={`font-${font.toLowerCase()}`}>{children}</div>
     </FontContext.Provider>
   );
 };

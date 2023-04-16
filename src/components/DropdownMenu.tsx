@@ -18,7 +18,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
       <Popover.Portal>
         <Popover.Content
           className={twMerge(
-            "rounded-[16px] p-5 bg-white dark:bg-light-black text-darker-grey dark:text-white min-w-[100px] break-words shadow-dropdownLight dark:shadow-dropdownDark",
+            "rounded-[16px] p-5 bg-white dark:bg-light-black text-darker-grey dark:text-white min-w-[130px] break-words shadow-dropdownLight dark:shadow-dropdownDark",
             className
           )}
         >

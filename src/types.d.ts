@@ -6,7 +6,7 @@ export interface StorageManager {
   remove: (key: StorageKey) => void;
 }
 
-export interface Dictionary {
+export interface Word {
   word: string;
   phonetic: string;
   phonetics: Phonetic[];

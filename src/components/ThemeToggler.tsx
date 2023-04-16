@@ -7,8 +7,8 @@ const ThemeToggler = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="flex flex-row items-center m-2 w-fit">
-      <label className="relative inline-flex items-center cursor-pointer gap-2">
+    <div className="flex flex-row items-center ml-4 w-fit">
+      <label className="relative inline-flex items-center cursor-pointer gap-4 ">
         <input
           type="checkbox"
           checked={theme === "dark"}
