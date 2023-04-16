@@ -40,8 +40,8 @@ const Typography: React.FC<TypographyProps> = ({
   const fontClass = fonts[font.toLowerCase() as Font];
 
   const variantClasses: Record<Variant, string> = {
-    headingL: fontClass + "text-[64px] font-bold leading-[77px]",
-    headingM: fontClass + "text-[24px] leading-[29px]",
+    headingL: fontClass + "text-[32px] sm:text-[64px] font-bold leading-[77px]",
+    headingM: fontClass + "text=[18px] sm:text-[24px] leading-[29px]",
     headingS: fontClass + "text-[20px] leading-[24px]",
     bodyM: fontClass + "text-[18px] leading-[24px]",
     bodyS: fontClass + "text-[14px] leading-[17px]",
